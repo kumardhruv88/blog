@@ -1,90 +1,106 @@
-# TechScribe — Modern Tech Blog Platform
+<div align="center">
 
-A full-stack tech blog platform built with React, Vite, Express, and Supabase —
-featuring a warm, professional UI, rich content creation, and an integrated
-research paper explorer.
+<img src="https://img.shields.io/badge/TECHSCRIBE-Modern%20Tech%20Blog-1A1A2E?style=for-the-badge&logoColor=white" alt="TechScribe" height="36"/>
 
-![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-7-646CFF?logo=vite&logoColor=white)
-![Express](https://img.shields.io/badge/Express-4-000000?logo=express&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-Database-3FCF8E?logo=supabase&logoColor=white)
-![Clerk](https://img.shields.io/badge/Clerk-Auth-6C47FF?logo=clerk&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/Tailwind-4-06B6D4?logo=tailwindcss&logoColor=white)
+# TechScribe
 
----
+### A Modern Full-Stack Tech Blog Platform
 
-## ✨ Features
+*Write. Explore. Build.*
 
-- **Blog Engine** — Create, edit, and publish rich Markdown posts with live
-  preview, syntax highlighting, and image uploads.
-- **Research Papers** — Browse 90+ curated landmark papers across 9 fields or
-  search millions via the CORE API.
-- **Code Playground** — Interactive code editor powered by Monaco with live
-  preview.
-- **User Dashboard** — Analytics, post management, bookmarks, and profile
-  customization.
-- **Admin Panel** — Full admin dashboard with user/post/tag management and
-  analytics.
-- **Authentication** — Secure auth via Clerk with role-based access control.
-- **Modern UI** — Warm light palette, glassmorphism effects, Framer Motion
-  animations, and fully responsive design.
+![React](https://img.shields.io/badge/React_19-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite_7-646CFF?style=flat-square&logo=vite&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white)
+![Clerk](https://img.shields.io/badge/Clerk-6C47FF?style=flat-square&logo=clerk&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS_4-06B6D4?style=flat-square&logo=tailwind-css&logoColor=white)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
+
+</div>
 
 ---
 
-## 🛠️ Tech Stack
+## Overview
 
-| Layer    | Technology                                      |
-| -------- | ----------------------------------------------- |
-| Frontend | React 19, Vite 7, Tailwind CSS 4, Framer Motion |
-| Backend  | Express.js, Node.js                             |
-| Database | Supabase (PostgreSQL)                           |
-| Auth     | Clerk                                           |
-| Storage  | Cloudinary (image uploads)                      |
-| Charts   | Recharts                                        |
-| Editor   | Monaco Editor, React Markdown                   |
+**TechScribe** is a full-stack tech blog platform built with React, Vite, Express, and Supabase. It combines a rich content creation experience with a built-in research paper explorer, an interactive code playground, and a comprehensive admin panel — all wrapped in a warm, responsive UI.
 
 ---
 
-## 📁 Project Structure
+## Features
+
+| | Feature | Description |
+|---|---|---|
+| ✍️ | **Blog Engine** | Create, edit, and publish Markdown posts with live preview, syntax highlighting, and image uploads |
+| 🔬 | **Research Papers** | Browse 90+ curated landmark papers across 9 fields or search millions via the CORE API |
+| 💻 | **Code Playground** | Interactive Monaco-powered editor with live preview |
+| 📊 | **User Dashboard** | Analytics, post management, bookmarks, and profile customization |
+| 🛡️ | **Admin Panel** | Full dashboard with user, post, and tag management |
+| 🔐 | **Authentication** | Secure auth via Clerk with role-based access control |
+| 🎨 | **Modern UI** | Warm light palette, glassmorphism effects, Framer Motion animations, fully responsive |
+
+---
+
+## Tech Stack
+
+**Frontend**
+
+![React](https://img.shields.io/badge/React_19-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite_7-646CFF?style=flat-square&logo=vite&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS_4-06B6D4?style=flat-square&logo=tailwind-css&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=flat-square&logo=framer&logoColor=white)
+![Monaco Editor](https://img.shields.io/badge/Monaco_Editor-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
+![Recharts](https://img.shields.io/badge/Recharts-22B5BF?style=flat-square&logo=react&logoColor=white)
+
+**Backend**
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
+
+**Database & Services**
+
+![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Clerk](https://img.shields.io/badge/Clerk-6C47FF?style=flat-square&logo=clerk&logoColor=white)
+![Cloudinary](https://img.shields.io/badge/Cloudinary-3448C5?style=flat-square&logo=cloudinary&logoColor=white)
+
+---
+
+## Project Structure
 
 ```
 blog/
-├── client/                 # React frontend (Vite)
+├── client/                     # React frontend (Vite)
 │   ├── src/
-│   │   ├── components/     # Reusable UI components
-│   │   │   ├── blog/       # Blog-specific components
-│   │   │   ├── common/     # Button, Card, Input, Badge
-│   │   │   ├── home/       # Hero, CategoryCarousel, etc.
-│   │   │   └── layout/     # Navbar, Footer, UserLayout
-│   │   ├── data/           # Curated research papers dataset
-│   │   ├── pages/          # Route pages
-│   │   ├── styles/         # Global CSS, glassmorphism
-│   │   ├── routes.jsx      # App routing
-│   │   └── App.jsx         # Root component
-│   ├── public/             # Static assets
-│   └── index.html          # Entry HTML
+│   │   ├── components/         # Reusable UI components
+│   │   │   ├── blog/           # Blog-specific components
+│   │   │   ├── common/         # Button, Card, Input, Badge
+│   │   │   ├── home/           # Hero, CategoryCarousel, etc.
+│   │   │   └── layout/         # Navbar, Footer, UserLayout
+│   │   ├── data/               # Curated research papers dataset
+│   │   ├── pages/              # Route-level page components
+│   │   ├── styles/             # Global CSS & glassmorphism
+│   │   ├── routes.jsx          # App routing
+│   │   └── App.jsx             # Root component
+│   ├── public/                 # Static assets
+│   └── index.html              # Entry HTML
 │
-├── server/                 # Express backend
-│   ├── config/             # DB & app config
-│   ├── controllers/        # Route handlers
-│   ├── middleware/          # Auth, validation, upload
-│   ├── routes/             # API route definitions
-│   ├── utils/              # Helpers
-│   ├── schema.sql          # Database schema
-│   └── index.js            # Server entry point
-│
-├── .gitignore
-└── README.md
+└── server/                     # Express backend
+    ├── config/                 # DB & app config
+    ├── controllers/            # Route handlers
+    ├── middleware/             # Auth, validation, upload
+    ├── routes/                 # API route definitions
+    ├── utils/                  # Helper functions
+    ├── schema.sql              # Database schema
+    └── index.js                # Server entry point
 ```
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
-- **Node.js** ≥ 18
-- **npm** ≥ 9
+- ![Node.js](https://img.shields.io/badge/Node.js-≥18-339933?style=flat-square&logo=node.js&logoColor=white)
 - A [Supabase](https://supabase.com) project
 - A [Clerk](https://clerk.com) application
 - A [Cloudinary](https://cloudinary.com) account
@@ -133,49 +149,50 @@ CLOUDINARY_API_SECRET=your_api_secret
 
 ### 4. Setup the database
 
-Run `server/schema.sql` in your Supabase SQL editor to create all necessary
-tables.
+Run `server/schema.sql` in your Supabase SQL editor to initialise all required tables.
 
 ### 5. Start development servers
 
 ```bash
 # Terminal 1 — Client
-cd client
-npm run dev
+cd client && npm run dev
 
 # Terminal 2 — Server
-cd server
-npm run dev
+cd server && npm run dev
 ```
 
-The client runs at `http://localhost:5178` and the server at
-`http://localhost:5000`.
+| Service | URL |
+|---|---|
+| Client | `http://localhost:5178` |
+| Server | `http://localhost:5000` |
 
 ---
 
-## 📸 Pages
+## Pages & Routes
 
-| Page            | Route            | Description                       |
-| --------------- | ---------------- | --------------------------------- |
-| Home            | `/`              | Hero, categories, featured posts  |
-| Blog            | `/blog`          | Filterable blog listing           |
-| Post Detail     | `/blog/:slug`    | Full article with TOC & comments  |
-| Research Papers | `/research`      | Curated + CORE API paper search   |
-| Code Playground | `/playground`    | Monaco-based code editor          |
-| Dashboard       | `/dashboard`     | User analytics & post management  |
-| Create Post     | `/create-post`   | Markdown editor with live preview |
-| Profile         | `/profile/:user` | Public user profile               |
-| About           | `/about`         | About the platform                |
-| Contact         | `/contact`       | Contact form                      |
+| Page | Route | Description |
+|---|---|---|
+| Home | `/` | Hero, categories, featured posts |
+| Blog | `/blog` | Filterable blog listing |
+| Post Detail | `/blog/:slug` | Full article with TOC & comments |
+| Research Papers | `/research` | Curated + CORE API paper search |
+| Code Playground | `/playground` | Monaco-based code editor |
+| Dashboard | `/dashboard` | User analytics & post management |
+| Create Post | `/create-post` | Markdown editor with live preview |
+| Profile | `/profile/:user` | Public user profile |
+| About | `/about` | About the platform |
+| Contact | `/contact` | Contact form |
 
 ---
 
-## 📄 License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-<p align="center">
-  Built with ☕ by <strong>Dhruv</strong>
-</p>
+<div align="center">
+
+*Built for developers who love to write.*
+
+</div>
